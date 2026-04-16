@@ -6,176 +6,114 @@
     <title>Uday — UI/UX Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursor-follower"></div>
+    <!-- Parchment texture overlay -->
+    <div class="parchment-overlay"></div>
 
-    <!-- Grain Overlay -->
-    <div class="grain-overlay"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-logo">U.</a>
-        <div class="nav-links">
-            <a href="#about" class="nav-link" data-hover="About">About</a>
-            <a href="#work" class="nav-link" data-hover="Work">Work</a>
-            <a href="#skills" class="nav-link" data-hover="Skills">Skills</a>
-            <a href="#contact" class="nav-link" data-hover="Contact">Contact</a>
+    <!-- Navigation — Ship's Wheel -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">⚓ Uday</a>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">Captain's Log</a>
+            <a href="#projects">Treasure</a>
+            <a href="#skills">Arsenal</a>
+            <a href="#contact">Message</a>
         </div>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
+        <button class="nav-burger" id="nav-burger" aria-label="Menu">
+            <span></span><span></span><span></span>
         </button>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#work" class="mobile-link">Work</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-    </div>
-
-    <!-- Hero Section -->
+    <!-- Hero — The Call to Adventure -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <div class="hero-badge reveal">
-                <span class="badge-dot"></span>
-                <span>Available for freelance</span>
+            <div class="hero-compass">
+                <div class="compass-ring">
+                    <div class="compass-needle"></div>
+                    <span class="compass-n">N</span>
+                    <span class="compass-e">E</span>
+                    <span class="compass-s">S</span>
+                    <span class="compass-w">W</span>
+                </div>
             </div>
-            <h1 class="hero-title">
-                <span class="title-line reveal">
-                    <span class="title-word">Hey, I'm</span>
-                </span>
-                <span class="title-line reveal">
-                    <span class="title-word highlight">Uday</span>
-                </span>
+            <p class="hero-pre anim-up">&mdash; A Designer Sets Sail &mdash;</p>
+            <h1 class="hero-name anim-up delay-1">
+                <span class="line1">Captain</span>
+                <span class="line2">Uday</span>
             </h1>
-            <p class="hero-subtitle reveal">
-                UI/UX Design Student crafting digital experiences<br>
-                that feel intuitive &amp; look stunning.
+            <p class="hero-tagline anim-up delay-2">
+                <span class="gold">UI/UX Designer</span> · DIT University, Dehradun
             </p>
-            <div class="hero-cta reveal">
-                <a href="#work" class="btn btn-primary magnetic">
-                    <span>View My Work</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                    </svg>
+            <p class="hero-quote anim-up delay-3">
+                <em>&ldquo;Not all treasure is silver and gold, mate.&rdquo;</em><br>
+                I chart courses through digital seas — designing interfaces<br>
+                that guide users to their destination.
+            </p>
+            <div class="hero-actions anim-up delay-4">
+                <a href="#projects" class="btn-pirate">
+                    <span class="btn-skull">☠</span> Open the Chest
                 </a>
-                <a href="#contact" class="btn btn-outline magnetic">
-                    <span>Get in Touch</span>
-                </a>
+                <a href="#contact" class="btn-ghost-p">Send a Bottle →</a>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
-            <div class="scroll-line"></div>
-            <span>Scroll</span>
+        <div class="hero-scroll">
+            <div class="scroll-rope"></div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
-    <!-- Marquee Section -->
-    <section class="marquee-section">
-        <div class="marquee">
-            <div class="marquee-track">
-                <span>UI Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>UX Research</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Prototyping</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Wireframing</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Visual Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Interaction Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>UI Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>UX Research</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Prototyping</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Wireframing</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Visual Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-                <span>Interaction Design</span>
-                <span class="marquee-dot">&#x2022;</span>
-            </div>
-        </div>
-    </section>
+    <!-- Divider — Rope -->
+    <div class="rope-divider">
+        <span class="rope-knot">⚓</span>
+    </div>
 
-    <!-- About Section -->
+    <!-- About — Captain's Log -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-label reveal">
-                <span class="label-number">01</span>
-                <span class="label-text">About Me</span>
+            <div class="section-head reveal">
+                <span class="section-icon">📜</span>
+                <h2>Captain's <span class="gold">Log</span></h2>
             </div>
             <div class="about-grid">
-                <div class="about-text">
-                    <h2 class="about-heading reveal">
-                        I design experiences<br>that people <em>remember.</em>
-                    </h2>
-                    <p class="about-description reveal">
-                        I'm a first-year UI/UX Design student at DIT University, Dehradun,
-                        with a passion for creating beautiful, functional digital experiences.
-                        My journey started with a curiosity for how things look and feel on screen,
-                        and it has grown into a deep love for human-centered design.
+                <div class="about-text reveal">
+                    <p>
+                        <strong>Name:</strong> Uday<br>
+                        <strong>Rank:</strong> UI/UX Design Apprentice<br>
+                        <strong>Port of Origin:</strong> Moradabad (Shirdi Sai Public School)<br>
+                        <strong>Current Harbor:</strong> DIT University, Dehradun<br>
+                        <strong>Year at Sea:</strong> 1st Year — B.Des
                     </p>
-                    <p class="about-description reveal">
-                        Having completed my schooling at Shirdi Sai Public School, Moradabad,
-                        I moved to Dehradun to pursue my dream of becoming a professional UI/UX designer.
-                        Every project I take on is an opportunity to blend aesthetics with usability.
+                    <p>
+                        Like any great pirate, I believe the best treasures are found
+                        where others refuse to look. I navigate the uncharted waters of
+                        design — crafting experiences that feel like discovering buried gold.
                     </p>
                 </div>
-                <div class="about-bento">
-                    <div class="bento-card bento-education reveal">
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
-                            </svg>
+                <div class="about-cards">
+                    <div class="map-card reveal">
+                        <div class="card-seal">🎓</div>
+                        <h4>Voyage Log</h4>
+                        <div class="log-entry">
+                            <span class="log-date">2024 — Present</span>
+                            <span class="log-text">DIT University, Dehradun — B.Des UI/UX</span>
                         </div>
-                        <h3>Education</h3>
-                        <div class="bento-detail">
-                            <span class="detail-label">Currently</span>
-                            <span class="detail-value">DIT University, Dehradun</span>
-                            <span class="detail-sub">B.Des in UI/UX Design — 1st Year</span>
-                        </div>
-                        <div class="bento-detail">
-                            <span class="detail-label">12th Grade</span>
-                            <span class="detail-value">Shirdi Sai Public School</span>
-                            <span class="detail-sub">Moradabad, UP</span>
+                        <div class="log-entry">
+                            <span class="log-date">Completed 2024</span>
+                            <span class="log-text">Shirdi Sai Public School, Moradabad — 12th</span>
                         </div>
                     </div>
-                    <div class="bento-card bento-passion reveal">
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
-                        <h3>What I Do</h3>
-                        <p>Crafting user interfaces, building prototypes, and turning ideas into pixel-perfect designs.</p>
-                    </div>
-                    <div class="bento-card bento-tools reveal">
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="3"/>
-                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                            </svg>
-                        </div>
-                        <h3>Tools</h3>
-                        <div class="tool-tags">
-                            <span class="tool-tag">Figma</span>
-                            <span class="tool-tag">Adobe XD</span>
-                            <span class="tool-tag">Photoshop</span>
-                            <span class="tool-tag">Illustrator</span>
-                            <span class="tool-tag">Canva</span>
+                    <div class="map-card reveal">
+                        <div class="card-seal">⚔️</div>
+                        <h4>Weapons of Choice</h4>
+                        <div class="weapon-grid">
+                            <span class="weapon-item">Figma</span>
+                            <span class="weapon-item">Adobe XD</span>
+                            <span class="weapon-item">Photoshop</span>
+                            <span class="weapon-item">Illustrator</span>
+                            <span class="weapon-item">Canva</span>
                         </div>
                     </div>
                 </div>
@@ -183,115 +121,100 @@
         </div>
     </section>
 
-    <!-- Work / Projects Section -->
-    <section class="work" id="work">
+    <!-- Divider -->
+    <div class="rope-divider"><span class="rope-knot">☠</span></div>
+
+    <!-- Projects — Treasure Chest -->
+    <section class="projects" id="projects">
         <div class="container">
-            <div class="section-label reveal">
-                <span class="label-number">02</span>
-                <span class="label-text">Selected Work</span>
+            <div class="section-head reveal">
+                <span class="section-icon">💰</span>
+                <h2>Treasure <span class="gold">Chest</span></h2>
             </div>
-            <h2 class="work-heading reveal">
-                Projects &amp; Case Studies
-            </h2>
-            <p class="work-subtext reveal">
-                A collection of my design explorations and projects.
-            </p>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects loaded dynamically from JS -->
-            </div>
+            <p class="section-sub reveal">Plundered artifacts from design voyages.</p>
+            <div class="projects-grid" id="projects-grid"></div>
             <div class="no-projects" id="no-projects" style="display:none;">
-                <div class="empty-state">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <path d="M3 9h18M9 21V9"/>
-                    </svg>
-                    <p>Projects coming soon. Stay tuned!</p>
+                <div class="empty-chest">
+                    <span>📦</span>
+                    <p><em>The chest is empty... treasure incoming, savvy?</em></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Divider -->
+    <div class="rope-divider"><span class="rope-knot">⚓</span></div>
+
+    <!-- Skills — Arsenal -->
     <section class="skills" id="skills">
         <div class="container">
-            <div class="section-label reveal">
-                <span class="label-number">03</span>
-                <span class="label-text">Skills</span>
+            <div class="section-head reveal">
+                <span class="section-icon">🗡️</span>
+                <h2>Pirate's <span class="gold">Arsenal</span></h2>
             </div>
-            <h2 class="skills-heading reveal">
-                My Design Arsenal
-            </h2>
             <div class="skills-grid">
                 <div class="skill-card reveal">
-                    <div class="skill-number">01</div>
-                    <h3>UI Design</h3>
-                    <p>Creating visually appealing interfaces with attention to typography, color, and layout.</p>
+                    <div class="skill-rank">I</div>
+                    <h4>UI Design</h4>
+                    <p>Crafting treasure maps that lead users exactly where they need to go.</p>
                 </div>
                 <div class="skill-card reveal">
-                    <div class="skill-number">02</div>
-                    <h3>UX Research</h3>
-                    <p>Understanding user needs through research, personas, and journey mapping.</p>
+                    <div class="skill-rank">II</div>
+                    <h4>UX Research</h4>
+                    <p>Scouting uncharted territories to understand what users truly seek.</p>
                 </div>
                 <div class="skill-card reveal">
-                    <div class="skill-number">03</div>
-                    <h3>Prototyping</h3>
-                    <p>Building interactive prototypes that bring designs to life before development.</p>
+                    <div class="skill-rank">III</div>
+                    <h4>Prototyping</h4>
+                    <p>Building ship models before setting sail on the real voyage.</p>
                 </div>
                 <div class="skill-card reveal">
-                    <div class="skill-number">04</div>
-                    <h3>Wireframing</h3>
-                    <p>Sketching low-fidelity layouts to map user flows and information architecture.</p>
+                    <div class="skill-rank">IV</div>
+                    <h4>Wireframing</h4>
+                    <p>Drawing the first charts — rough but true to course.</p>
                 </div>
                 <div class="skill-card reveal">
-                    <div class="skill-number">05</div>
-                    <h3>Visual Design</h3>
-                    <p>Developing brand identities, illustrations, and graphic assets.</p>
+                    <div class="skill-rank">V</div>
+                    <h4>Visual Design</h4>
+                    <p>Making every piece of eight gleam with polish and purpose.</p>
                 </div>
                 <div class="skill-card reveal">
-                    <div class="skill-number">06</div>
-                    <h3>Design Systems</h3>
-                    <p>Building scalable component libraries for consistent design language.</p>
+                    <div class="skill-rank">VI</div>
+                    <h4>Design Systems</h4>
+                    <p>A captain's code — rules that keep the whole fleet in formation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Divider -->
+    <div class="rope-divider"><span class="rope-knot">☠</span></div>
+
+    <!-- Contact — Message in a Bottle -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-label reveal">
-                <span class="label-number">04</span>
-                <span class="label-text">Contact</span>
+            <div class="section-head reveal">
+                <span class="section-icon">🍾</span>
+                <h2>Message in a <span class="gold">Bottle</span></h2>
             </div>
-            <div class="contact-content">
-                <h2 class="contact-heading reveal">
-                    Let's work<br><em>together.</em>
-                </h2>
-                <p class="contact-text reveal">
-                    Have a project in mind or just want to say hello?<br>
-                    I'd love to hear from you.
-                </p>
-                <div class="contact-links reveal">
-                    <a href="mailto:hello@uday.design" class="contact-link magnetic">
-                        <span class="contact-link-label">Email</span>
-                        <span class="contact-link-value">hello@uday.design</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
+            <div class="bottle-box reveal">
+                <h3>Want to join the <span class="gold">crew?</span></h3>
+                <p>Whether it's a grand adventure or a simple parley — send a message across the seven seas.</p>
+                <div class="bottle-links">
+                    <a href="mailto:hello@uday.design" class="bottle-link">
+                        <span class="bl-icon">📧</span>
+                        <span class="bl-label">Pigeon Post</span>
+                        <span class="bl-value">hello@uday.design</span>
                     </a>
-                    <a href="https://linkedin.com/in/uday" target="_blank" class="contact-link magnetic">
-                        <span class="contact-link-label">LinkedIn</span>
-                        <span class="contact-link-value">linkedin.com/in/uday</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
+                    <a href="https://linkedin.com/in/uday" target="_blank" class="bottle-link">
+                        <span class="bl-icon">🔗</span>
+                        <span class="bl-label">Trade Routes</span>
+                        <span class="bl-value">linkedin.com/in/uday</span>
                     </a>
-                    <a href="https://instagram.com/uday" target="_blank" class="contact-link magnetic">
-                        <span class="contact-link-label">Instagram</span>
-                        <span class="contact-link-value">@uday</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
+                    <a href="https://instagram.com/uday" target="_blank" class="bottle-link">
+                        <span class="bl-icon">📸</span>
+                        <span class="bl-label">Ship's Gallery</span>
+                        <span class="bl-value">@uday</span>
                     </a>
                 </div>
             </div>
@@ -300,9 +223,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <span class="footer-copy">&copy; 2026 Uday. All rights reserved.</span>
-            <span class="footer-credit">Designed with passion in Dehradun</span>
+        <div class="container footer-row">
+            <span>⚓ Captain Uday © 2026</span>
+            <span>&ldquo;Bring me that horizon.&rdquo; 🏴‍☠️</span>
         </div>
     </footer>
 
