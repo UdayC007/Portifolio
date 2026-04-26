@@ -15,9 +15,10 @@
 
     <!-- Navigation — Ship's Wheel -->
     <nav class="nav" id="nav">
-        <a href="#" class="nav-logo">⚓ Uday</a>
+        <a href="#" class="nav-logo"><span class="brand-mark">⚓</span><span id="nav-name">Uday</span></a>
         <div class="nav-links" id="nav-links">
             <a href="#about">Captain's Log</a>
+            <a href="#curriculum">Sem I</a>
             <a href="#projects">Treasure</a>
             <a href="#skills">Arsenal</a>
             <a href="#contact">Message</a>
@@ -42,12 +43,12 @@
             <p class="hero-pre anim-up">&mdash; A Designer Sets Sail &mdash;</p>
             <h1 class="hero-name anim-up delay-1">
                 <span class="line1">Captain</span>
-                <span class="line2">Uday</span>
+                <span class="line2" id="hero-name">Uday</span>
             </h1>
             <p class="hero-tagline anim-up delay-2">
-                <span class="gold">UI/UX Designer</span> · DIT University, Dehradun
+                <span class="gold" id="hero-title">UI/UX Designer</span> · <span id="hero-college">DIT University, Dehradun</span>
             </p>
-            <p class="hero-quote anim-up delay-3">
+            <p class="hero-quote anim-up delay-3" id="hero-tagline">
                 <em>&ldquo;Not all treasure is silver and gold, mate.&rdquo;</em><br>
                 I chart courses through digital seas — designing interfaces<br>
                 that guide users to their destination.
@@ -63,6 +64,7 @@
             <div class="scroll-rope"></div>
             <span>Scroll Down</span>
         </div>
+        <div class="hero-portrait-photo" id="hero-portrait-photo"></div>
     </section>
 
     <!-- Divider — Rope -->
@@ -79,18 +81,26 @@
             </div>
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <p>
-                        <strong>Name:</strong> Uday<br>
-                        <strong>Rank:</strong> UI/UX Design Apprentice<br>
-                        <strong>Port of Origin:</strong> Moradabad (Shirdi Sai Public School)<br>
-                        <strong>Current Harbor:</strong> DIT University, Dehradun<br>
-                        <strong>Year at Sea:</strong> 1st Year — B.Des
+                    <div class="about-portrait" id="about-portrait"></div>
+                    <p id="about-stats-block">
+                        <strong>Name:</strong> <span id="about-name">Uday</span><br>
+                        <strong>Rank:</strong> <span id="about-rank">UI/UX Design Apprentice</span><br>
+                        <strong>Current Harbor:</strong> <span id="about-college">DIT University, Dehradun</span><br>
+                        <strong>Year at Sea:</strong> <span id="about-year">1st Year — B.Des</span>
                     </p>
-                    <p>
-                        Like any great pirate, I believe the best treasures are found
-                        where others refuse to look. I navigate the uncharted waters of
-                        design — crafting experiences that feel like discovering buried gold.
-                    </p>
+                    <p id="about-bio">A first-year design student crewing the great pirate ship of UX.</p>
+                    <div class="about-extra">
+                        <div class="extra-card">
+                            <span class="ec-tag">// PERSONAL TOUCH</span>
+                            <h4>Below deck</h4>
+                            <p id="personal-touch">—</p>
+                        </div>
+                        <div class="extra-card">
+                            <span class="ec-tag">// VOYAGE GOALS</span>
+                            <h4>Where I'm sailing</h4>
+                            <p id="goals-text">—</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-cards">
                     <div class="map-card reveal">
@@ -124,6 +134,19 @@
     <!-- Divider -->
     <div class="rope-divider"><span class="rope-knot">☠</span></div>
 
+    <!-- Curriculum — Semester I -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-icon">📜</span>
+                <h2>Semester I — <span class="gold">Charts &amp; Crew</span></h2>
+            </div>
+            <div class="subject-grid" id="subject-grid"></div>
+        </div>
+    </section>
+
+    <div class="rope-divider"><span class="rope-knot">⚓</span></div>
+
     <!-- Projects — Treasure Chest -->
     <section class="projects" id="projects">
         <div class="container">
@@ -152,38 +175,7 @@
                 <span class="section-icon">🗡️</span>
                 <h2>Pirate's <span class="gold">Arsenal</span></h2>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card reveal">
-                    <div class="skill-rank">I</div>
-                    <h4>UI Design</h4>
-                    <p>Crafting treasure maps that lead users exactly where they need to go.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-rank">II</div>
-                    <h4>UX Research</h4>
-                    <p>Scouting uncharted territories to understand what users truly seek.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-rank">III</div>
-                    <h4>Prototyping</h4>
-                    <p>Building ship models before setting sail on the real voyage.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-rank">IV</div>
-                    <h4>Wireframing</h4>
-                    <p>Drawing the first charts — rough but true to course.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-rank">V</div>
-                    <h4>Visual Design</h4>
-                    <p>Making every piece of eight gleam with polish and purpose.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-rank">VI</div>
-                    <h4>Design Systems</h4>
-                    <p>A captain's code — rules that keep the whole fleet in formation.</p>
-                </div>
-            </div>
+            <div class="skills-grid" id="skills-grid"></div>
         </div>
     </section>
 
@@ -200,23 +192,7 @@
             <div class="bottle-box reveal">
                 <h3>Want to join the <span class="gold">crew?</span></h3>
                 <p>Whether it's a grand adventure or a simple parley — send a message across the seven seas.</p>
-                <div class="bottle-links">
-                    <a href="mailto:hello@uday.design" class="bottle-link">
-                        <span class="bl-icon">📧</span>
-                        <span class="bl-label">Pigeon Post</span>
-                        <span class="bl-value">hello@uday.design</span>
-                    </a>
-                    <a href="https://linkedin.com/in/uday" target="_blank" class="bottle-link">
-                        <span class="bl-icon">🔗</span>
-                        <span class="bl-label">Trade Routes</span>
-                        <span class="bl-value">linkedin.com/in/uday</span>
-                    </a>
-                    <a href="https://instagram.com/uday" target="_blank" class="bottle-link">
-                        <span class="bl-icon">📸</span>
-                        <span class="bl-label">Ship's Gallery</span>
-                        <span class="bl-value">@uday</span>
-                    </a>
-                </div>
+                <div class="bottle-links" id="msg-links"></div>
             </div>
         </div>
     </section>
@@ -224,12 +200,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-row">
-            <span>⚓ Captain Uday © 2026</span>
+            <span id="footer-name">⚓ Captain Uday © 2026</span>
             <span>&ldquo;Bring me that horizon.&rdquo; 🏴‍☠️</span>
         </div>
     </footer>
 
-    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
