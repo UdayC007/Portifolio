@@ -8,6 +8,8 @@ const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => nav && nav.classList.toggle('scrolled', window.scrollY > 50));
 
 function projectId() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('id')) return params.get('id');
   const parts = window.location.pathname.split('/').filter(Boolean);
   return parts[parts.length - 1];
 }
@@ -21,7 +23,7 @@ function gallerySize(i, total) {
 
 async function loadSite() {
   try {
-    const r = await fetch('/api/site');
+    const r = await fetch('data/site.json');
     const s = await r.json();
     const p = s.profile || {};
     $('nav-name').textContent = p.name || 'Uday';
@@ -36,10 +38,13 @@ async function loadSite() {
 async function loadProject() {
   const root = $('project-root');
   try {
-    const r = await fetch('/api/projects/' + encodeURIComponent(projectId()));
-    if (!r.ok) throw new Error('Quest not found');
-    const p = await r.json();
-    document.title = p.title + ' — Surya Portfolio';
+    const r = await fetch('data/projects.json');
+    if (!r.ok) throw new Error('Could not load projects');
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data.items || []);
+    const p = list.find(x => x.id === projectId());
+    if (!p) throw new Error('Treasure not found');
+    document.title = p.title + ' — Uday Portfolio';
 
     const all = p.images || [];
     const cover = all[0];
@@ -81,11 +86,11 @@ async function loadProject() {
         </div>` : ''}
 
       <div style="text-align:center;margin-top:30px">
-        <a href="/#projects" class="btn-ghost-p">← More treasure</a>
+        <a href="index.html#projects" class="btn-ghost-p">← More treasure</a>
       </div>
     `;
   } catch (e) {
-    root.innerHTML = `<div style="text-align:center;padding:60px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius)"><h3 style="font-family:var(--font-pirate);font-size:2rem;color:var(--gold-bright);margin-bottom:8px">${esc(e.message)}</h3><p style="color:var(--text-sec)">This treasure may have washed ashore elsewhere. <a href="/" style="color:var(--gold-bright)">Sail home →</a></p></div>`;
+    root.innerHTML = `<div style="text-align:center;padding:60px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius)"><h3 style="font-family:var(--font-pirate);font-size:2rem;color:var(--gold-bright);margin-bottom:8px">${esc(e.message)}</h3><p style="color:var(--text-sec)">This treasure may have washed ashore elsewhere. <a href="index.html" style="color:var(--gold-bright)">Sail home →</a></p></div>`;
   }
 }
 

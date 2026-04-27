@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Uday",
+    "title": "UI/UX Design Apprentice",
+    "year": "1st Year",
+    "college": "DIT University, Dehradun",
+    "tagline": "\"Not all treasure is silver and gold, mate.\" Charting courses through digital seas.",
+    "bio": "A first-year design student crewing the great pirate ship of UX. Every interface is a treasure map; every user, a navigator looking for safe harbour.",
+    "personalTouch": "When I'm not sketching wireframes I read pirate folklore, hunt vintage typography, and try to recreate Caribbean sunset palettes in Figma.",
+    "goals": "Build a portfolio of swashbuckling case studies; learn motion design properly; intern at a small studio that values craft over scale."
+  },
+  "contact": {
+    "email": "",
+    "instagram": "",
+    "twitter": "",
+    "linkedin": ""
+  },
+  "subjects": [
+    { "code": "CSE101", "name": "Programming Fundamentals", "faculty": "" },
+    { "code": "MAT101", "name": "Engineering Mathematics I", "faculty": "" },
+    { "code": "PHY101", "name": "Engineering Physics", "faculty": "" },
+    { "code": "ENG101", "name": "Communication Skills", "faculty": "" },
+    { "code": "ELC101", "name": "Basic Electronics", "faculty": "" },
+    { "code": "WSP101", "name": "Workshop Practice", "faculty": "" }
+  ],
+  "skills": [
+    { "name": "UI Design",       "level": 80, "rank": "I" },
+    { "name": "UX Research",     "level": 72, "rank": "II" },
+    { "name": "Prototyping",     "level": 78, "rank": "III" },
+    { "name": "Wireframing",     "level": 75, "rank": "IV" },
+    { "name": "Visual Design",   "level": 82, "rank": "V" },
+    { "name": "Design Systems",  "level": 68, "rank": "VI" }
+  ],
+  "photos": { "hero": null, "about": null, "brand": null }
+}
