@@ -4,7 +4,7 @@
    ======================================== */
 
 :root {
-    --bg: #1a1209;
+    --bg: #0b1e3d;
     --bg-card: #221a0e;
     --bg-card-hover: #2a2012;
     --parchment: #f4e4c1;
@@ -139,7 +139,6 @@ img { max-width: 100%; display: block; }
     border: 2px solid var(--gold-dim);
     border-radius: 50%;
     position: relative;
-    animation: compassSpin 20s linear infinite;
 }
 
 @keyframes compassSpin {
@@ -162,7 +161,6 @@ img { max-width: 100%; display: block; }
     font-size: 0.6rem;
     font-weight: 700;
     color: var(--gold);
-    animation: compassCounterSpin 20s linear infinite;
 }
 
 @keyframes compassCounterSpin {
