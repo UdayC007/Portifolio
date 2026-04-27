@@ -29,5 +29,5 @@
     { "name": "Visual Design",   "level": 82, "rank": "V" },
     { "name": "Design Systems",  "level": 68, "rank": "VI" }
   ],
-  "photos": { "hero": null, "about": null, "brand": null }
+  "photos": { "hero": "uploads/uday-hero.jpg", "about": "uploads/uday-hero.jpg", "brand": "uploads/uday-hero.jpg" }
 }
