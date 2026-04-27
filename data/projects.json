@@ -1,1 +1,67 @@
-{"items":[]}
+{
+  "items": [
+    {
+      "id": "p4-element-of-design",
+      "title": "Element of Design — A Visual Atlas",
+      "description": "A four-part study on the building blocks of visual design.\n\n**Pareto Principle** — the 80/20 rule mapped onto how a viewer's eye actually scans a layout: 41% top-left, 20% top-right, 25% middle-left, 14% middle-right.\n\n**Rule of Thirds** — placing the focal object at one of the four intersections rather than dead-centre.\n\n**Occam's Razor** — among competing solutions, the simplest one (the one with the fewest assumptions) is usually the best. Demonstrated on a clean app settings screen.\n\n**Elements & Design Matrix** — a personal grid of line, shape, form, point, colour, texture, value and space, paired with a separate matrix mapping those elements against the principles (balance, rhythm, emphasis, contrast, movement, harmony, proportion).",
+      "teacher": "",
+      "category": "Element of Design",
+      "year": "2025",
+      "tags": ["Foundation", "Design Theory", "Composition", "UX"],
+      "link": "",
+      "color": "#d4a843",
+      "images": [
+        "uploads/uday-p4-pareto-rule-of-thirds.jpg",
+        "uploads/uday-p4-occams-razor.jpg",
+        "uploads/uday-p4-elements-grid.jpg",
+        "uploads/uday-p4-design-matrix.jpg"
+      ],
+      "createdAt": 1745738000000
+    },
+    {
+      "id": "p3-miniature-portrait",
+      "title": "Miniature Portrait Study",
+      "description": "A hand-painted study in the tradition of Indian miniature painting — a woman in profile, draped in saffron and gold, framed by a deep teal field and a striped indigo-and-gold border. Sequins, beadwork and metallic ink stand in for the kundan and meenakari work of the originals; the gesture of the brushwork keeps the scale intimate. A study of how an entire history of court painting compresses into a single face.",
+      "teacher": "",
+      "category": "History of Design",
+      "year": "2025",
+      "tags": ["History", "Painting", "Miniature", "Indian Art"],
+      "link": "",
+      "color": "#d4a843",
+      "images": [
+        "uploads/uday-p3-miniature-portrait.jpg"
+      ],
+      "createdAt": 1745735000000
+    },
+    {
+      "id": "p2-air-freshener-comic",
+      "title": "The Automatic Air Freshener — A Comic",
+      "description": "A four-panel storytelling exercise. A boy boasts that his new automatic air freshener will turn his bedroom into a garden of flowers. Just past midnight, as he settles into a peaceful ambience, the device hisses awake — *Psshhhttt* — and a ghost rides out on the mist. \"You scared the life out of me!\" Storytelling, panel pacing, and reading the moment a small product becomes a small horror story.",
+      "teacher": "",
+      "category": "Visualisation Tools and Storytelling",
+      "year": "2025",
+      "tags": ["Storytelling", "Comic", "Illustration", "Narrative"],
+      "link": "",
+      "color": "#5b8aff",
+      "images": [
+        "uploads/uday-p2-air-freshener-comic.jpg"
+      ],
+      "createdAt": 1745731000000
+    },
+    {
+      "id": "p1-spectacles-user-journey",
+      "title": "User Journey Map — Buying Spectacles",
+      "description": "An end-to-end map of the experience of buying and living with a new pair of spectacles, from the moment the box arrives to long-term ownership. Seven phases (seeing the box → opening → removing content → reading instructions → first use → everyday experience → long-term ownership), an emotion line that swings from excitement to nose-pad-sweat frustration to good response, and three lanes of insight: pain points, moments of delight, and opportunities (eco-friendly packaging, frustration-free seals, QR-coded video guides, a free six-monthly cleaning subscription, 24/7 multilingual customer care).\n\nGoals captured: clear vision, comfort & fit, style & appearance, durability & quality, convenience & service, confidence & trust.",
+      "teacher": "",
+      "category": "Empathy in Design",
+      "year": "2025",
+      "tags": ["Empathy", "User Journey", "UX Research", "Service Design"],
+      "link": "",
+      "color": "#f4c430",
+      "images": [
+        "uploads/uday-p1-user-journey-map.jpg"
+      ],
+      "createdAt": 1745724000000
+    }
+  ]
+}

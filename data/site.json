@@ -16,12 +16,10 @@
     "linkedin": ""
   },
   "subjects": [
-    { "code": "CSE101", "name": "Programming Fundamentals", "faculty": "" },
-    { "code": "MAT101", "name": "Engineering Mathematics I", "faculty": "" },
-    { "code": "PHY101", "name": "Engineering Physics", "faculty": "" },
-    { "code": "ENG101", "name": "Communication Skills", "faculty": "" },
-    { "code": "ELC101", "name": "Basic Electronics", "faculty": "" },
-    { "code": "WSP101", "name": "Workshop Practice", "faculty": "" }
+    { "code": "", "name": "Empathy in Design", "faculty": "" },
+    { "code": "", "name": "Visualisation Tools and Storytelling", "faculty": "" },
+    { "code": "", "name": "History of Design", "faculty": "" },
+    { "code": "", "name": "Element of Design", "faculty": "" }
   ],
   "skills": [
     { "name": "UI Design",       "level": 80, "rank": "I" },
